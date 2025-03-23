@@ -1,16 +1,34 @@
-import * as cdk from 'aws-cdk-lib';
-import { Construct } from 'constructs';
-// import * as sqs from 'aws-cdk-lib/aws-sqs';
+import { Code, Function } from '@aws-cdk/aws-lambda';
+import { Runtime } from '@aws-cdk/aws-lambda';
+import {App, StackProps, Stack, CfnParameter} from '@aws-cdk/core';
 
-export class CdkProjectStack extends cdk.Stack {
-  constructor(scope: Construct, id: string, props?: cdk.StackProps) {
-    super(scope, id, props);
+interface LambdaStackProps extends StackProps {
+  stage: string;
+  region: string
+}
 
-    // The code that defines your stack goes here
+export class CdkProjectStack extends Stack {
+  constructor(parent: App, name: string, props?: LambdaStackProps) {
+    super(parent, name, props);
 
-    // example resource
-    // const queue = new sqs.Queue(this, 'CdkProjectQueue', {
-    //   visibilityTimeout: cdk.Duration.seconds(300)
-    // });
+    // Read parameters from CloudFormation
+    const stageParam = new CfnParameter(this, "stage", {
+      type: "String",
+      description: "Deployment stage",
+    });
+    const regionParam = new CfnParameter(this, "region", {
+      type: "String",
+      description: "Deployment region",
+    });
+
+    const handlerFunction = new Function(this, 'DescriptorFunctionNew', {
+      handler: "lambda/src/index.handler",
+      runtime: Runtime.NODEJS_16_X,
+      code: Code.fromAsset('lib/lambda'),
+      environment: {
+        region: regionParam.valueAsString,
+        stage: stageParam.valueAsString
+      }
+    });
   }
 }

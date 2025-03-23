@@ -1,0 +1,32 @@
+{
+    "key": "aws-codestar",
+    "name": "AWS CodeStar",
+    "description": "Enables you to connect Bitbucket with AWS by creating a connection in AWS CodeStar",
+    "baseUrl": "https://codestar-connections.webhooks.aws",
+    "lifecycle": {
+        "installed": "/connect/trigger/bitbucket",
+        "uninstalled": "/connect/trigger/bitbucket"
+    },
+    "authentication": {
+        "type": "jwt"
+    },
+    "modules": {
+        "webhooks": [
+            {
+                "event": "*",
+                "url": "/connect/trigger/bitbucket"
+            }
+        ]
+    },
+    "scopes": [
+        "account",
+        "repository:write",
+        "repository:admin",
+        "pullrequest",
+        "pullrequest:write",
+        "webhook"
+    ],
+    "contexts": [
+        "account"
+    ]
+}

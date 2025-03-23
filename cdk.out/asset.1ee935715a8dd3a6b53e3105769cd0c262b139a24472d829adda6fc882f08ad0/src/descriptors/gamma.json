@@ -1,0 +1,34 @@
+{
+    "key": "cassowary-gamma",
+    "name": "Cassowary Gamma",
+    "description": "Cassowary Gamma Environment",
+    "baseUrl": "https://cassowary-connections-gamma.webhooks.aws",
+    "lifecycle": {
+        "installed": "/connect/trigger/bitbucket",
+        "uninstalled": "/connect/trigger/bitbucket"
+    },
+    "authentication": {
+        "type": "jwt"
+    },
+    "modules": {
+        "webhooks": [
+            {
+                "event": "*",
+                "url": "/connect/trigger/bitbucket"
+            }
+        ]
+    },
+    "scopes": [
+        "account",
+        "repository:write",
+        "repository:admin",
+        "repository:delete",
+        "pullrequest",
+        "pullrequest:write",
+        "issue",
+        "webhook"
+    ],
+    "contexts": [
+        "account"
+    ]
+}

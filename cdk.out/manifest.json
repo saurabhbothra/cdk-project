@@ -1,0 +1,1143 @@
+{
+  "version": "21.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "CassowaryBitbucketAppDescriptorBuildStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://653351866406/us-east-1",
+      "properties": {
+        "templateFile": "CassowaryBitbucketAppDescriptorBuildStack.template.json",
+        "validateOnSynth": false
+      },
+      "metadata": {
+        "/CassowaryBitbucketAppDescriptorBuildStack/CassowaryBitbucketAppDescriptorRepo/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CassowaryBitbucketAppDescriptorRepo62B6372F",
+            "trace": [
+              "new Repository (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codecommit/lib/repository.ts:559:24)",
+              "new BuildStack (/Users/sabothra/Desktop/cdk-project/lib/build-stack.ts:20:22)",
+              "Object.<anonymous> (/Users/sabothra/Desktop/cdk-project/bin/cdk-project.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:75:12)",
+              "phase4 (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:75:12)",
+              "/Users/sabothra/.nvm/versions/node/v14.20.1/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CassowaryBitbucketAppDescriptorBuildStack/CassowaryBitbucketAppDescriptorRepo/CassowaryBitbucketAppDescriptorBuildStackPipeline19006667-main-EventRule/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CassowaryBitbucketAppDescriptorRepoCassowaryBitbucketAppDescriptorBuildStackPipeline19006667mainEventRule60E9172D",
+            "trace": [
+              "new Rule (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-events/lib/rule.ts:136:22)",
+              "Repository.onEvent (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codecommit/lib/repository.ts:258:18)",
+              "Repository.onStateChange (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codecommit/lib/repository.ts:272:23)",
+              "Repository.onReferenceUpdated (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codecommit/lib/repository.ts:294:23)",
+              "Repository.onCommit (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codecommit/lib/repository.ts:340:23)",
+              "CodeCommitSourceAction.bound (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline-actions/lib/codecommit/source-action.ts:172:29)",
+              "CodeCommitSourceAction.bind (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/action.ts:413:17)",
+              "RichAction.bind (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/private/rich-action.ts:30:24)",
+              "Pipeline._attachActionToPipeline (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:554:37)",
+              "Stage.attachActionToPipeline (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:159:27)",
+              "Stage.addAction (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:97:29)",
+              "new Stage (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:44:12)",
+              "Pipeline.addStage (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:478:19)",
+              "new BuildStack (/Users/sabothra/Desktop/cdk-project/lib/build-stack.ts:55:18)",
+              "Object.<anonymous> (/Users/sabothra/Desktop/cdk-project/bin/cdk-project.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:75:12)",
+              "phase4 (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:75:12)",
+              "/Users/sabothra/.nvm/versions/node/v14.20.1/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CassowaryBitbucketAppDescriptorBuildStack/Pipeline/ArtifactsBucketEncryptionKey/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineArtifactsBucketEncryptionKey01D58D69",
+            "trace": [
+              "new Key (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-kms/lib/key.ts:652:22)",
+              "new Pipeline (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:400:25)",
+              "new BuildStack (/Users/sabothra/Desktop/cdk-project/lib/build-stack.ts:22:26)",
+              "Object.<anonymous> (/Users/sabothra/Desktop/cdk-project/bin/cdk-project.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:75:12)",
+              "phase4 (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:75:12)",
+              "/Users/sabothra/.nvm/versions/node/v14.20.1/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CassowaryBitbucketAppDescriptorBuildStack/Pipeline/ArtifactsBucketEncryptionKeyAlias/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineArtifactsBucketEncryptionKeyAlias5C510EEE",
+            "trace": [
+              "new Alias (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-kms/lib/alias.ts:198:22)",
+              "new Pipeline (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:407:9)",
+              "new BuildStack (/Users/sabothra/Desktop/cdk-project/lib/build-stack.ts:22:26)",
+              "Object.<anonymous> (/Users/sabothra/Desktop/cdk-project/bin/cdk-project.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:75:12)",
+              "phase4 (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:75:12)",
+              "/Users/sabothra/.nvm/versions/node/v14.20.1/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CassowaryBitbucketAppDescriptorBuildStack/Pipeline/ArtifactsBucket/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineArtifactsBucket22248F97",
+            "trace": [
+              "new Bucket (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:1676:22)",
+              "new Pipeline (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:414:21)",
+              "new BuildStack (/Users/sabothra/Desktop/cdk-project/lib/build-stack.ts:22:26)",
+              "Object.<anonymous> (/Users/sabothra/Desktop/cdk-project/bin/cdk-project.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:75:12)",
+              "phase4 (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:75:12)",
+              "/Users/sabothra/.nvm/versions/node/v14.20.1/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CassowaryBitbucketAppDescriptorBuildStack/Pipeline/ArtifactsBucket/Policy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineArtifactsBucketPolicyD4F9712A",
+            "trace": [
+              "new BucketPolicy (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-s3/lib/bucket-policy.ts:53:21)",
+              "Bucket.addToResourcePolicy (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:605:21)",
+              "Bucket.enforceSSLStatement (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:1813:10)",
+              "new Bucket (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:1719:12)",
+              "new Pipeline (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:414:21)",
+              "new BuildStack (/Users/sabothra/Desktop/cdk-project/lib/build-stack.ts:22:26)",
+              "Object.<anonymous> (/Users/sabothra/Desktop/cdk-project/bin/cdk-project.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:75:12)",
+              "phase4 (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:75:12)",
+              "/Users/sabothra/.nvm/versions/node/v14.20.1/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CassowaryBitbucketAppDescriptorBuildStack/Pipeline/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineRoleD68726F7",
+            "trace": [
+              "new Role (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-iam/lib/role.ts:381:18)",
+              "new Pipeline (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:426:31)",
+              "new BuildStack (/Users/sabothra/Desktop/cdk-project/lib/build-stack.ts:22:26)",
+              "Object.<anonymous> (/Users/sabothra/Desktop/cdk-project/bin/cdk-project.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:75:12)",
+              "phase4 (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:75:12)",
+              "/Users/sabothra/.nvm/versions/node/v14.20.1/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CassowaryBitbucketAppDescriptorBuildStack/Pipeline/Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineRoleDefaultPolicyC7A05455",
+            "trace": [
+              "new Policy (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-iam/lib/policy.ts:154:22)",
+              "Role.addToPrincipalPolicy (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-iam/lib/role.ts:431:28)",
+              "Function.addToPrincipal (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-iam/lib/grant.ts:164:61)",
+              "Function.addToPrincipalOrResource (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-iam/lib/grant.ts:115:26)",
+              "Bucket.grant (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:917:27)",
+              "Bucket.grantReadWrite (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:775:17)",
+              "new Pipeline (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:443:25)",
+              "new BuildStack (/Users/sabothra/Desktop/cdk-project/lib/build-stack.ts:22:26)",
+              "Object.<anonymous> (/Users/sabothra/Desktop/cdk-project/bin/cdk-project.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:75:12)",
+              "phase4 (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:75:12)",
+              "/Users/sabothra/.nvm/versions/node/v14.20.1/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CassowaryBitbucketAppDescriptorBuildStack/Pipeline/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineC660917D",
+            "trace": [
+              "new Pipeline (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:430:25)",
+              "new BuildStack (/Users/sabothra/Desktop/cdk-project/lib/build-stack.ts:22:26)",
+              "Object.<anonymous> (/Users/sabothra/Desktop/cdk-project/bin/cdk-project.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:75:12)",
+              "phase4 (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:75:12)",
+              "/Users/sabothra/.nvm/versions/node/v14.20.1/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CassowaryBitbucketAppDescriptorBuildStack/Pipeline/Source/CodeCommit_Source/CodePipelineActionRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineSourceCodeCommitSourceCodePipelineActionRole89AB8DD5",
+            "trace": [
+              "new Role (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-iam/lib/role.ts:381:18)",
+              "Pipeline.getRoleForAction (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:722:20)",
+              "Pipeline._attachActionToPipeline (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:548:29)",
+              "Stage.attachActionToPipeline (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:159:27)",
+              "Stage.addAction (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:97:29)",
+              "new Stage (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:44:12)",
+              "Pipeline.addStage (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:478:19)",
+              "new BuildStack (/Users/sabothra/Desktop/cdk-project/lib/build-stack.ts:55:18)",
+              "Object.<anonymous> (/Users/sabothra/Desktop/cdk-project/bin/cdk-project.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:75:12)",
+              "phase4 (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:75:12)",
+              "/Users/sabothra/.nvm/versions/node/v14.20.1/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CassowaryBitbucketAppDescriptorBuildStack/Pipeline/Source/CodeCommit_Source/CodePipelineActionRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineSourceCodeCommitSourceCodePipelineActionRoleDefaultPolicyD20EE23A",
+            "trace": [
+              "new Policy (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-iam/lib/policy.ts:154:22)",
+              "Role.addToPrincipalPolicy (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-iam/lib/role.ts:431:28)",
+              "Function.addToPrincipal (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-iam/lib/grant.ts:164:61)",
+              "Function.addToPrincipalOrResource (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-iam/lib/grant.ts:115:26)",
+              "Bucket.grant (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:917:27)",
+              "Bucket.grantReadWrite (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:775:17)",
+              "CodeCommitSourceAction.bound (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline-actions/lib/codecommit/source-action.ts:182:20)",
+              "CodeCommitSourceAction.bind (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/action.ts:413:17)",
+              "RichAction.bind (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/private/rich-action.ts:30:24)",
+              "Pipeline._attachActionToPipeline (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:554:37)",
+              "Stage.attachActionToPipeline (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:159:27)",
+              "Stage.addAction (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:97:29)",
+              "new Stage (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:44:12)",
+              "Pipeline.addStage (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:478:19)",
+              "new BuildStack (/Users/sabothra/Desktop/cdk-project/lib/build-stack.ts:55:18)",
+              "Object.<anonymous> (/Users/sabothra/Desktop/cdk-project/bin/cdk-project.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:75:12)",
+              "phase4 (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:75:12)",
+              "/Users/sabothra/.nvm/versions/node/v14.20.1/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CassowaryBitbucketAppDescriptorBuildStack/Pipeline/EventsRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineEventsRole46BEEA7C",
+            "trace": [
+              "new Role (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-iam/lib/role.ts:381:18)",
+              "Object.singletonEventRole (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-events-targets/lib/util.ts:79:16)",
+              "CodePipeline.bind (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-events-targets/lib/codepipeline.ts:29:44)",
+              "Rule.addTarget (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-events/lib/rule.ts:172:32)",
+              "Repository.onEvent (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codecommit/lib/repository.ts:263:10)",
+              "Repository.onStateChange (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codecommit/lib/repository.ts:272:23)",
+              "Repository.onReferenceUpdated (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codecommit/lib/repository.ts:294:23)",
+              "Repository.onCommit (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codecommit/lib/repository.ts:340:23)",
+              "CodeCommitSourceAction.bound (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline-actions/lib/codecommit/source-action.ts:172:29)",
+              "CodeCommitSourceAction.bind (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/action.ts:413:17)",
+              "RichAction.bind (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/private/rich-action.ts:30:24)",
+              "Pipeline._attachActionToPipeline (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:554:37)",
+              "Stage.attachActionToPipeline (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:159:27)",
+              "Stage.addAction (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:97:29)",
+              "new Stage (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:44:12)",
+              "Pipeline.addStage (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:478:19)",
+              "new BuildStack (/Users/sabothra/Desktop/cdk-project/lib/build-stack.ts:55:18)",
+              "Object.<anonymous> (/Users/sabothra/Desktop/cdk-project/bin/cdk-project.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:75:12)",
+              "phase4 (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:75:12)",
+              "/Users/sabothra/.nvm/versions/node/v14.20.1/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CassowaryBitbucketAppDescriptorBuildStack/Pipeline/EventsRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineEventsRoleDefaultPolicyFF4FCCE0",
+            "trace": [
+              "new Policy (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-iam/lib/policy.ts:154:22)",
+              "Role.addToPrincipalPolicy (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-iam/lib/role.ts:431:28)",
+              "CodePipeline.bind (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-events-targets/lib/codepipeline.ts:30:10)",
+              "Rule.addTarget (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-events/lib/rule.ts:172:32)",
+              "Repository.onEvent (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codecommit/lib/repository.ts:263:10)",
+              "Repository.onStateChange (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codecommit/lib/repository.ts:272:23)",
+              "Repository.onReferenceUpdated (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codecommit/lib/repository.ts:294:23)",
+              "Repository.onCommit (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codecommit/lib/repository.ts:340:23)",
+              "CodeCommitSourceAction.bound (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline-actions/lib/codecommit/source-action.ts:172:29)",
+              "CodeCommitSourceAction.bind (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/action.ts:413:17)",
+              "RichAction.bind (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/private/rich-action.ts:30:24)",
+              "Pipeline._attachActionToPipeline (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:554:37)",
+              "Stage.attachActionToPipeline (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:159:27)",
+              "Stage.addAction (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:97:29)",
+              "new Stage (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:44:12)",
+              "Pipeline.addStage (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:478:19)",
+              "new BuildStack (/Users/sabothra/Desktop/cdk-project/lib/build-stack.ts:55:18)",
+              "Object.<anonymous> (/Users/sabothra/Desktop/cdk-project/bin/cdk-project.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:75:12)",
+              "phase4 (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:75:12)",
+              "/Users/sabothra/.nvm/versions/node/v14.20.1/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CassowaryBitbucketAppDescriptorBuildStack/Pipeline/Build/Build/CodePipelineActionRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineBuildCodePipelineActionRoleD77A08E6",
+            "trace": [
+              "new Role (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-iam/lib/role.ts:381:18)",
+              "Pipeline.getRoleForAction (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:722:20)",
+              "Pipeline._attachActionToPipeline (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:548:29)",
+              "Stage.attachActionToPipeline (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:159:27)",
+              "Stage.addAction (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:97:29)",
+              "new Stage (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:44:12)",
+              "Pipeline.addStage (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:478:19)",
+              "new BuildStack (/Users/sabothra/Desktop/cdk-project/lib/build-stack.ts:101:18)",
+              "Object.<anonymous> (/Users/sabothra/Desktop/cdk-project/bin/cdk-project.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:75:12)",
+              "phase4 (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:75:12)",
+              "/Users/sabothra/.nvm/versions/node/v14.20.1/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CassowaryBitbucketAppDescriptorBuildStack/Pipeline/Build/Build/CodePipelineActionRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineBuildCodePipelineActionRoleDefaultPolicyC9CB73F8",
+            "trace": [
+              "new Policy (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-iam/lib/policy.ts:154:22)",
+              "Role.addToPrincipalPolicy (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-iam/lib/role.ts:431:28)",
+              "Role.addToPolicy (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-iam/lib/role.ts:445:17)",
+              "CodeBuildAction.bound (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline-actions/lib/codebuild/build-action.ts:166:18)",
+              "CodeBuildAction.bind (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/action.ts:413:17)",
+              "RichAction.bind (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/private/rich-action.ts:30:24)",
+              "Pipeline._attachActionToPipeline (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:554:37)",
+              "Stage.attachActionToPipeline (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:159:27)",
+              "Stage.addAction (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:97:29)",
+              "new Stage (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:44:12)",
+              "Pipeline.addStage (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:478:19)",
+              "new BuildStack (/Users/sabothra/Desktop/cdk-project/lib/build-stack.ts:101:18)",
+              "Object.<anonymous> (/Users/sabothra/Desktop/cdk-project/bin/cdk-project.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:75:12)",
+              "phase4 (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:75:12)",
+              "/Users/sabothra/.nvm/versions/node/v14.20.1/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CassowaryBitbucketAppDescriptorBuildStack/Pipeline/Deploy/Deploy/CodePipelineActionRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineDeployCodePipelineActionRole8B83082E",
+            "trace": [
+              "new Role (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-iam/lib/role.ts:381:18)",
+              "Pipeline.getRoleForAction (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:722:20)",
+              "Pipeline._attachActionToPipeline (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:548:29)",
+              "Stage.attachActionToPipeline (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:159:27)",
+              "Stage.addAction (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:97:29)",
+              "new Stage (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:44:12)",
+              "Pipeline.addStage (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:478:19)",
+              "new BuildStack (/Users/sabothra/Desktop/cdk-project/lib/build-stack.ts:128:18)",
+              "Object.<anonymous> (/Users/sabothra/Desktop/cdk-project/bin/cdk-project.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:75:12)",
+              "phase4 (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:75:12)",
+              "/Users/sabothra/.nvm/versions/node/v14.20.1/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CassowaryBitbucketAppDescriptorBuildStack/Pipeline/Deploy/Deploy/CodePipelineActionRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineDeployCodePipelineActionRoleDefaultPolicyEE6D615B",
+            "trace": [
+              "new Policy (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-iam/lib/policy.ts:154:22)",
+              "Role.addToPrincipalPolicy (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-iam/lib/role.ts:431:28)",
+              "Role.addToPolicy (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-iam/lib/role.ts:445:17)",
+              "SingletonPolicy.statementFor (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline-actions/lib/cloudformation/private/singleton-policy.ts:110:17)",
+              "SingletonPolicy.grantPassRole (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline-actions/lib/cloudformation/private/singleton-policy.ts:100:10)",
+              "CloudFormationCreateUpdateStackAction.bound (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline-actions/lib/cloudformation/pipeline-actions.ts:319:43)",
+              "CloudFormationCreateUpdateStackAction.bound (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline-actions/lib/cloudformation/pipeline-actions.ts:464:32)",
+              "CloudFormationCreateUpdateStackAction.bind (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/action.ts:413:17)",
+              "RichAction.bind (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/private/rich-action.ts:30:24)",
+              "Pipeline._attachActionToPipeline (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:554:37)",
+              "Stage.attachActionToPipeline (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:159:27)",
+              "Stage.addAction (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:97:29)",
+              "new Stage (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:44:12)",
+              "Pipeline.addStage (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:478:19)",
+              "new BuildStack (/Users/sabothra/Desktop/cdk-project/lib/build-stack.ts:128:18)",
+              "Object.<anonymous> (/Users/sabothra/Desktop/cdk-project/bin/cdk-project.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:75:12)",
+              "phase4 (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:75:12)",
+              "/Users/sabothra/.nvm/versions/node/v14.20.1/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CassowaryBitbucketAppDescriptorBuildStack/Pipeline/Deploy/Deploy/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineDeployRole97597E3E",
+            "trace": [
+              "new Role (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-iam/lib/role.ts:381:18)",
+              "CloudFormationCreateUpdateStackAction.bound (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline-actions/lib/cloudformation/pipeline-actions.ts:299:32)",
+              "CloudFormationCreateUpdateStackAction.bound (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline-actions/lib/cloudformation/pipeline-actions.ts:464:32)",
+              "CloudFormationCreateUpdateStackAction.bind (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/action.ts:413:17)",
+              "RichAction.bind (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/private/rich-action.ts:30:24)",
+              "Pipeline._attachActionToPipeline (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:554:37)",
+              "Stage.attachActionToPipeline (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:159:27)",
+              "Stage.addAction (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:97:29)",
+              "new Stage (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:44:12)",
+              "Pipeline.addStage (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:478:19)",
+              "new BuildStack (/Users/sabothra/Desktop/cdk-project/lib/build-stack.ts:128:18)",
+              "Object.<anonymous> (/Users/sabothra/Desktop/cdk-project/bin/cdk-project.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:75:12)",
+              "phase4 (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:75:12)",
+              "/Users/sabothra/.nvm/versions/node/v14.20.1/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CassowaryBitbucketAppDescriptorBuildStack/Pipeline/Deploy/Deploy/Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineDeployRoleDefaultPolicy90429F22",
+            "trace": [
+              "new Policy (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-iam/lib/policy.ts:154:22)",
+              "Role.addToPrincipalPolicy (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-iam/lib/role.ts:431:28)",
+              "Function.addToPrincipal (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-iam/lib/grant.ts:164:61)",
+              "Function.addToPrincipalOrResource (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-iam/lib/grant.ts:115:26)",
+              "Bucket.grant (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:917:27)",
+              "Bucket.grantRead (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:729:17)",
+              "CloudFormationCreateUpdateStackAction.bound (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline-actions/lib/cloudformation/pipeline-actions.ts:309:22)",
+              "CloudFormationCreateUpdateStackAction.bound (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline-actions/lib/cloudformation/pipeline-actions.ts:464:32)",
+              "CloudFormationCreateUpdateStackAction.bind (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/action.ts:413:17)",
+              "RichAction.bind (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/private/rich-action.ts:30:24)",
+              "Pipeline._attachActionToPipeline (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:554:37)",
+              "Stage.attachActionToPipeline (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:159:27)",
+              "Stage.addAction (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:97:29)",
+              "new Stage (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:44:12)",
+              "Pipeline.addStage (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:478:19)",
+              "new BuildStack (/Users/sabothra/Desktop/cdk-project/lib/build-stack.ts:128:18)",
+              "Object.<anonymous> (/Users/sabothra/Desktop/cdk-project/bin/cdk-project.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:75:12)",
+              "phase4 (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:75:12)",
+              "/Users/sabothra/.nvm/versions/node/v14.20.1/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CassowaryBitbucketAppDescriptorBuildStack/CassowaryBitbucketAppDescriptorBuildProject/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CassowaryBitbucketAppDescriptorBuildProjectRole277733A0",
+            "trace": [
+              "new Role (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-iam/lib/role.ts:381:18)",
+              "new Project (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codebuild/lib/project.ts:1020:31)",
+              "new PipelineProject (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codebuild/lib/pipeline-project.ts:14:5)",
+              "new BuildStack (/Users/sabothra/Desktop/cdk-project/lib/build-stack.ts:67:26)",
+              "Object.<anonymous> (/Users/sabothra/Desktop/cdk-project/bin/cdk-project.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:75:12)",
+              "phase4 (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:75:12)",
+              "/Users/sabothra/.nvm/versions/node/v14.20.1/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CassowaryBitbucketAppDescriptorBuildStack/CassowaryBitbucketAppDescriptorBuildProject/Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CassowaryBitbucketAppDescriptorBuildProjectRoleDefaultPolicy0EBDC146",
+            "trace": [
+              "new Policy (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-iam/lib/policy.ts:154:22)",
+              "Role.addToPrincipalPolicy (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-iam/lib/role.ts:431:28)",
+              "PipelineProject.addToRolePolicy (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codebuild/lib/project.ts:290:17)",
+              "new Project (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codebuild/lib/project.ts:1119:10)",
+              "new PipelineProject (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codebuild/lib/pipeline-project.ts:14:5)",
+              "new BuildStack (/Users/sabothra/Desktop/cdk-project/lib/build-stack.ts:67:26)",
+              "Object.<anonymous> (/Users/sabothra/Desktop/cdk-project/bin/cdk-project.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:75:12)",
+              "phase4 (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:75:12)",
+              "/Users/sabothra/.nvm/versions/node/v14.20.1/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CassowaryBitbucketAppDescriptorBuildStack/CassowaryBitbucketAppDescriptorBuildProject/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CassowaryBitbucketAppDescriptorBuildProject2D171CB0",
+            "trace": [
+              "new Project (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codebuild/lib/project.ts:1073:22)",
+              "new PipelineProject (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-codebuild/lib/pipeline-project.ts:14:5)",
+              "new BuildStack (/Users/sabothra/Desktop/cdk-project/lib/build-stack.ts:67:26)",
+              "Object.<anonymous> (/Users/sabothra/Desktop/cdk-project/bin/cdk-project.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:75:12)",
+              "phase4 (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:75:12)",
+              "/Users/sabothra/.nvm/versions/node/v14.20.1/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CassowaryBitbucketAppDescriptorBuildStack/CodeCommitRepoArn": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CodeCommitRepoArn",
+            "trace": [
+              "new BuildStack (/Users/sabothra/Desktop/cdk-project/lib/build-stack.ts:133:9)",
+              "Object.<anonymous> (/Users/sabothra/Desktop/cdk-project/bin/cdk-project.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:75:12)",
+              "phase4 (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:75:12)",
+              "/Users/sabothra/.nvm/versions/node/v14.20.1/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CassowaryBitbucketAppDescriptorBuildStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:22:24)",
+              "/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/core/lib/private/synthesis.ts:166:5",
+              "visit (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/core/lib/private/synthesis.ts:231:5)",
+              "visit (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/core/lib/private/synthesis.ts:227:5)",
+              "injectMetadataResources (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/core/lib/private/synthesis.ts:157:3)",
+              "Object.synthesize (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/core/lib/stage.ts:180:23)",
+              "process.<anonymous> (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/core/lib/app.ts:131:45)",
+              "Object.onceWrapper (events.js:520:26)",
+              "process.emit (events.js:400:28)",
+              "process.emit (domain.js:475:12)",
+              "process.emit.sharedData.processEmitHook.installedValue [as emit] (/Users/sabothra/Desktop/cdk-project/node_modules/@cspotcode/source-map-support/source-map-support.js:745:40)"
+            ]
+          }
+        ]
+      },
+      "displayName": "CassowaryBitbucketAppDescriptorBuildStack"
+    },
+    "CdkProjectStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "CdkProjectStack.template.json",
+        "validateOnSynth": false
+      },
+      "metadata": {
+        "/CdkProjectStack": [
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.1ee935715a8dd3a6b53e3105769cd0c262b139a24472d829adda6fc882f08ad0",
+              "id": "1ee935715a8dd3a6b53e3105769cd0c262b139a24472d829adda6fc882f08ad0",
+              "packaging": "zip",
+              "sourceHash": "1ee935715a8dd3a6b53e3105769cd0c262b139a24472d829adda6fc882f08ad0",
+              "s3BucketParameter": "AssetParameters1ee935715a8dd3a6b53e3105769cd0c262b139a24472d829adda6fc882f08ad0S3Bucket8C72DF5C",
+              "s3KeyParameter": "AssetParameters1ee935715a8dd3a6b53e3105769cd0c262b139a24472d829adda6fc882f08ad0S3VersionKey3E9B3CB3",
+              "artifactHashParameter": "AssetParameters1ee935715a8dd3a6b53e3105769cd0c262b139a24472d829adda6fc882f08ad0ArtifactHash297A83CB"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/core/lib/construct-compat.ts:453:92)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:187:23)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:86:19)",
+              "CdkProjectStack.addFileAsset (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/core/lib/stack.ts:683:29)",
+              "/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:91:53",
+              "withoutDeprecationWarnings (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:219:12)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:91:14)",
+              "new Asset (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:152:40)",
+              "AssetCode.bind (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-lambda/lib/code.ts:285:20)",
+              "new Function (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-lambda/lib/function.ts:708:29)",
+              "new CdkProjectStack (/Users/sabothra/Desktop/cdk-project/lib/cdk-project-stack.ts:24:29)",
+              "Object.<anonymous> (/Users/sabothra/Desktop/cdk-project/bin/cdk-project.ts:13:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:75:12)",
+              "phase4 (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:75:12)",
+              "/Users/sabothra/.nvm/versions/node/v14.20.1/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkProjectStack/stage": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "stage",
+            "trace": [
+              "new CdkProjectStack (/Users/sabothra/Desktop/cdk-project/lib/cdk-project-stack.ts:15:24)",
+              "Object.<anonymous> (/Users/sabothra/Desktop/cdk-project/bin/cdk-project.ts:13:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:75:12)",
+              "phase4 (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:75:12)",
+              "/Users/sabothra/.nvm/versions/node/v14.20.1/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkProjectStack/region": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "region",
+            "trace": [
+              "new CdkProjectStack (/Users/sabothra/Desktop/cdk-project/lib/cdk-project-stack.ts:19:25)",
+              "Object.<anonymous> (/Users/sabothra/Desktop/cdk-project/bin/cdk-project.ts:13:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:75:12)",
+              "phase4 (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:75:12)",
+              "/Users/sabothra/.nvm/versions/node/v14.20.1/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkProjectStack/DescriptorFunctionNew/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DescriptorFunctionNewServiceRoleF3D634CC",
+            "trace": [
+              "new Role (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-iam/lib/role.ts:381:18)",
+              "new Function (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-lambda/lib/function.ts:688:31)",
+              "new CdkProjectStack (/Users/sabothra/Desktop/cdk-project/lib/cdk-project-stack.ts:24:29)",
+              "Object.<anonymous> (/Users/sabothra/Desktop/cdk-project/bin/cdk-project.ts:13:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:75:12)",
+              "phase4 (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:75:12)",
+              "/Users/sabothra/.nvm/versions/node/v14.20.1/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkProjectStack/DescriptorFunctionNew/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DescriptorFunctionNew2EC874A4",
+            "trace": [
+              "new Function (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-lambda/lib/function.ts:771:35)",
+              "new CdkProjectStack (/Users/sabothra/Desktop/cdk-project/lib/cdk-project-stack.ts:24:29)",
+              "Object.<anonymous> (/Users/sabothra/Desktop/cdk-project/bin/cdk-project.ts:13:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:75:12)",
+              "phase4 (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:75:12)",
+              "/Users/sabothra/.nvm/versions/node/v14.20.1/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkProjectStack/AssetParameters/1ee935715a8dd3a6b53e3105769cd0c262b139a24472d829adda6fc882f08ad0/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters1ee935715a8dd3a6b53e3105769cd0c262b139a24472d829adda6fc882f08ad0S3Bucket8C72DF5C",
+            "trace": [
+              "new FileAssetParameters (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:16:32)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:170:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:86:19)",
+              "CdkProjectStack.addFileAsset (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/core/lib/stack.ts:683:29)",
+              "/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:91:53",
+              "withoutDeprecationWarnings (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:219:12)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:91:14)",
+              "new Asset (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:152:40)",
+              "AssetCode.bind (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-lambda/lib/code.ts:285:20)",
+              "new Function (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-lambda/lib/function.ts:708:29)",
+              "new CdkProjectStack (/Users/sabothra/Desktop/cdk-project/lib/cdk-project-stack.ts:24:29)",
+              "Object.<anonymous> (/Users/sabothra/Desktop/cdk-project/bin/cdk-project.ts:13:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:75:12)",
+              "phase4 (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:75:12)",
+              "/Users/sabothra/.nvm/versions/node/v14.20.1/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkProjectStack/AssetParameters/1ee935715a8dd3a6b53e3105769cd0c262b139a24472d829adda6fc882f08ad0/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters1ee935715a8dd3a6b53e3105769cd0c262b139a24472d829adda6fc882f08ad0S3VersionKey3E9B3CB3",
+            "trace": [
+              "new FileAssetParameters (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:21:31)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:170:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:86:19)",
+              "CdkProjectStack.addFileAsset (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/core/lib/stack.ts:683:29)",
+              "/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:91:53",
+              "withoutDeprecationWarnings (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:219:12)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:91:14)",
+              "new Asset (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:152:40)",
+              "AssetCode.bind (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-lambda/lib/code.ts:285:20)",
+              "new Function (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-lambda/lib/function.ts:708:29)",
+              "new CdkProjectStack (/Users/sabothra/Desktop/cdk-project/lib/cdk-project-stack.ts:24:29)",
+              "Object.<anonymous> (/Users/sabothra/Desktop/cdk-project/bin/cdk-project.ts:13:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:75:12)",
+              "phase4 (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:75:12)",
+              "/Users/sabothra/.nvm/versions/node/v14.20.1/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkProjectStack/AssetParameters/1ee935715a8dd3a6b53e3105769cd0c262b139a24472d829adda6fc882f08ad0/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters1ee935715a8dd3a6b53e3105769cd0c262b139a24472d829adda6fc882f08ad0ArtifactHash297A83CB",
+            "trace": [
+              "new FileAssetParameters (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:26:34)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:170:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:86:19)",
+              "CdkProjectStack.addFileAsset (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/core/lib/stack.ts:683:29)",
+              "/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:91:53",
+              "withoutDeprecationWarnings (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:219:12)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:91:14)",
+              "new Asset (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:152:40)",
+              "AssetCode.bind (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-lambda/lib/code.ts:285:20)",
+              "new Function (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/aws-lambda/lib/function.ts:708:29)",
+              "new CdkProjectStack (/Users/sabothra/Desktop/cdk-project/lib/cdk-project-stack.ts:24:29)",
+              "Object.<anonymous> (/Users/sabothra/Desktop/cdk-project/bin/cdk-project.ts:13:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:75:12)",
+              "phase4 (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/Users/sabothra/Desktop/cdk-project/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:12)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:75:12)",
+              "/Users/sabothra/.nvm/versions/node/v14.20.1/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/CdkProjectStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:22:24)",
+              "/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/core/lib/private/synthesis.ts:166:5",
+              "visit (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/core/lib/private/synthesis.ts:231:5)",
+              "visit (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/core/lib/private/synthesis.ts:227:5)",
+              "injectMetadataResources (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/core/lib/private/synthesis.ts:157:3)",
+              "Object.synthesize (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/core/lib/stage.ts:180:23)",
+              "process.<anonymous> (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/core/lib/app.ts:131:45)",
+              "Object.onceWrapper (events.js:520:26)",
+              "process.emit (events.js:400:28)",
+              "process.emit (domain.js:475:12)",
+              "process.emit.sharedData.processEmitHook.installedValue [as emit] (/Users/sabothra/Desktop/cdk-project/node_modules/@cspotcode/source-map-support/source-map-support.js:745:40)"
+            ]
+          }
+        ],
+        "/CdkProjectStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:31:27)",
+              "/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/core/lib/private/synthesis.ts:166:5",
+              "visit (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/core/lib/private/synthesis.ts:231:5)",
+              "visit (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/core/lib/private/synthesis.ts:227:5)",
+              "injectMetadataResources (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/core/lib/private/synthesis.ts:157:3)",
+              "Object.synthesize (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/core/lib/stage.ts:180:23)",
+              "process.<anonymous> (/Users/sabothra/Desktop/cdk-project/node_modules/@aws-cdk/core/lib/app.ts:131:45)",
+              "Object.onceWrapper (events.js:520:26)",
+              "process.emit (events.js:400:28)",
+              "process.emit (domain.js:475:12)",
+              "process.emit.sharedData.processEmitHook.installedValue [as emit] (/Users/sabothra/Desktop/cdk-project/node_modules/@cspotcode/source-map-support/source-map-support.js:745:40)"
+            ]
+          }
+        ]
+      },
+      "displayName": "CdkProjectStack"
+    }
+  }
+}
